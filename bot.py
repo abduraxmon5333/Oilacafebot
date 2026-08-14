@@ -26,9 +26,7 @@ def start(message):
         "Керакли бўлимни танланг:",
         reply_markup=markup
     )
-
-
-  @bot.message_handler(func=lambda message: message.text == "📋 Меню")
+@bot.message_handler(func=lambda message: message.text == "📋 Меню")
 def menu(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
 
