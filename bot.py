@@ -147,11 +147,9 @@ def pizza(message):
         message.chat.id,
         "🍕 Пицца турини танланг:",
         reply_markup=markup
+    ))
 )
-        message.chat.id,
-        "📋 Категорияни танланг:",
-        reply_markup=markup
-    )      
+            
     
         
     
