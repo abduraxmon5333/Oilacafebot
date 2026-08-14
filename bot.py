@@ -28,12 +28,23 @@ def start(message):
     )
 
 
-@bot.message_handler(func=lambda message: message.text == "📋 Меню")
+  @bot.message_handler(func=lambda message: message.text == "📋 Меню")
 def menu(message):
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+
+    markup.add("🍟 Fast Food", "🍢 Шашликлар")
+    markup.add("🍲 Қозон кабоблар", "🔥 Грилл")
+    markup.add("🍕 Пицца", "🥟 Гўштли кулчалар")
+    markup.add("🌯 Гўштли рулетлар", "🥗 Салатлар")
+    markup.add("🥤 Ичимликлар", "🔙 Орқага")
+
     bot.send_message(
         message.chat.id,
-        "📋 Бизнинг меню\n\n"
-        "Ҳозирча меню тайёрланмоқда..."
+        "📋 Категорияни танланг:",
+        reply_markup=markup
+    )      
+    
+        
     )
 
 
