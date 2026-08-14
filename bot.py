@@ -154,7 +154,7 @@ def pizza(message):
     )      
     
         
-    )
+    
 
 
 @bot.message_handler(func=lambda message: message.text == "🛒 Буюртма бериш")
