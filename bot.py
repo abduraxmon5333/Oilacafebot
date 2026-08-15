@@ -1,5 +1,11 @@
+import os
 import telebot
-from config import TOKEN
+from telebot import types
+
+TOKEN = os.getenv("BOT_TOKEN")
+
+bot = telebot.TeleBot(TOKEN)
+
 from handlers import register_handlers
 
 bot = telebot.TeleBot(TOKEN)
