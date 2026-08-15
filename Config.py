@@ -1,0 +1,11 @@
+TOKEN = "BOT_TOKEN"
+
+ADMIN_ID = 123456789
+
+CAFE_NAME = "🍽 OILA CAFE"
+
+PHONE = "+998994765694"
+
+ADDRESS = "Сирдарё вилояти, Мирзаобод тумани"
+
+DELIVERY_PRICE = 15000
